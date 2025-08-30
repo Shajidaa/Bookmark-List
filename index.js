@@ -19,8 +19,8 @@ document.getElementById('add-btn').addEventListener('click',function () {
     <div id='cart' class="border-gray-300 border-1 flex justify-between p-4 mb-2">
           
           <label class="select">
-         <span class="label">Type</span>
-      <select>
+         <span class="label md:text-2xl text-xl font-medium text-green-500">Type</span>
+      <select class="md:text-2xl text-xl font-medium text-green-500" >
        <option id="title-name" class="md:text-2xl text-xl font-medium text-green-500">${bookName}</option>
         <option>${bookUrl}</option>
          </select>
