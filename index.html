@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookmaker List</title>
+    <!-- daisy UI -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@5"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body
+    class="bg-gray-200 h-screen flex justify-center items-center text-center"
+  >
+    <div class="card bg-base-100 w-[600px] shadow-sm p-5">
+      <div class="card-body flex-col gap-5">
+        <h1 class="text-4xl md:text-5xl font-bold text-green-500 mb-2">
+          Bookmaker List
+        </h1>
+        <input
+          id="bookmaker-name"
+          type="text"
+          placeholder="Bookmaker name"
+          class="input input-ghost border-gray-400 p-3 md:p-7 w-full text-2xl font-semibold text-black drop-shadow-sm"
+        />
+        <input
+          id="book-url"
+          type="text"
+          placeholder="Bookmaker url"
+          class="input input-ghost border-gray-400 p-3 md:p-7 w-full text-2xl font-semibold text-black drop-shadow-sm"
+        />
+        <button
+          id="add-btn"
+          class="btn btn-full text-2xl bg-green-500 text-white font-medium md:p-7 p-3"
+        >
+          Add Bookmark
+        </button>
+        <div id="add-cart"></div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
