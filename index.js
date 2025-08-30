@@ -17,9 +17,14 @@ document.getElementById('add-btn').addEventListener('click',function () {
     const newDiv=document.createElement('div');
     newDiv.innerHTML=`
     <div id='cart' class="border-gray-300 border-1 flex justify-between p-4 mb-2">
-          <h1 id="title-name" class="md:text-2xl text-xl font-medium text-green-500">
-            ${bookName}
-          </h1>
+          
+          <label class="select">
+         <span class="label">Type</span>
+      <select>
+       <option id="title-name" class="md:text-2xl text-xl font-medium text-green-500">${bookName}</option>
+        <option>${bookUrl}</option>
+         </select>
+          </label>
           <button
             id=' ' onclick="remove(this)"
             class="bg-red-600 remove-btn md:p-5 p-4 font-medium text-white md:text-2xl text-xl btn"
